@@ -1,7 +1,37 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import 'header.scss';
+@import 'info.scss';
+@import 'slide.scss';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background: $c-gray;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', 'Times New Roman', Times, serif;
+  max-width: 1920px;
+}
+
+.form {
+  height: 568px;
+  background: linear-gradient(180deg, #5E19CE 0%, #4021D6 100%);
+  mix-blend-mode: darken;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.text_about {
+  display: block;
+  // padding: 40px 405px 60px 405px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: calc(50% - 555px);
+  padding-right: calc(50% - 555px);
+  background-color: #fff0e5;
+}
+
+.footer {
+  height: 706px;
+  padding: 60px calc(50% - 555px);
+  background-color: #394046;
 }
