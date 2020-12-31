@@ -63,12 +63,12 @@ $(function() {
 });
 
 // page after form
-$('.access__button').on('click', function() {
+$('.access__quiz_button').on('click', function() {
   $('.data__access').hide();
   $('.data__questions').show();
   $('#quiz_1').show();
   $('#page1').addClass('active');
-  $('.access__button').off();
+  $('.access__quiz_button').off();
 });
 
 // quiz answers logic
