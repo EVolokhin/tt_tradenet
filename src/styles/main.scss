@@ -45,14 +45,11 @@ select {
   background-color: #fff0e5;
 }
 
-
-
 .footer {
   height: 706px;
   padding: 60px calc(50% - 555px);
   background-color: #394046;
 }
-
 
 .data__questions {
   position: relative;
@@ -82,8 +79,6 @@ select {
     border: 3px solid #ababab;
     background-color: white;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
   }
 
   &_line {
@@ -111,7 +106,6 @@ select {
   background-color: white;
   box-shadow: 0 4px 90px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-
 
   &__number {
     margin-bottom: 120px;
@@ -158,14 +152,13 @@ select {
   }
 
   &__choise:hover {
-    border-color:  #4c1ed3;
+    border-color: #4c1ed3;
   }
 
   &__choise:hover svg {
     fill: #4c1ed3;
     stroke: #4c1ed3;
   }
-
 
   // &__icon {
   //   // align-self: center;
@@ -190,7 +183,7 @@ select {
   flex-direction: column-reverse;
   align-items: center;
   max-width: 1920px;
-  background: linear-gradient(180deg, #5E19CE 0%, #4021D6 100%);
+  background: linear-gradient(180deg, #5e19ce 0%, #4021d6 100%);
   mix-blend-mode: darken;
   transform: matrix(1, 0, 0, -1, 0, 0);
 
@@ -200,7 +193,6 @@ select {
     margin-top: 40px;
     width: 324px;
     color: white;
-    font-family: Rubik;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -219,7 +211,7 @@ select {
   width: 673px;
   height: 312px;
 
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 
@@ -301,7 +293,7 @@ select {
 .access {
   display: none;
   transform: matrix(1, 0, 0, -1, 0, 0);
-  padding: 60px 0 0 0;
+  padding: 60px 0 0;
 
   &__wrapper {
     padding: 40px 35px;
@@ -316,7 +308,7 @@ select {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 32px;
-    line-height: 38px
+    line-height: 38px;
   }
 
   &__quiz {
