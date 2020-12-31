@@ -38,6 +38,10 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background-color: #e96b2c;
     border: none;
     color: white;
@@ -46,6 +50,11 @@
     width: 184px;
     height: 56px;
     border-radius: 5px;
+  }
+
+  &__button:active,
+  &__button:focus {
+    outline: none;
   }
 
   &__images {
