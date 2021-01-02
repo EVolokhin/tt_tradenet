@@ -57,6 +57,7 @@ $(function() {
 
       $('#userform').hide();
       $('.data__title').hide();
+      $('.data').addClass('data-height');
       $('.data__access').show();
     },
   });
