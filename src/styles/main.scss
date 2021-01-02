@@ -53,7 +53,7 @@ select {
 .data__page {
   position: absolute;
   left: 40px;
-  top:186px;
+  top: 186px;
   width: 40px;
   display: flex;
   flex-direction: column;
@@ -194,7 +194,6 @@ select {
 .data-height {
   height: 885px;
 }
-
 
 .form {
   // display: none;
@@ -388,7 +387,7 @@ select {
   padding: 60px 40px 110px;
   width: 996px;
   background: #fff;
-  box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 90px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   transform: matrix(1, 0, 0, -1, 0, 0);
 
@@ -407,13 +406,13 @@ select {
 
   &__container {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
   }
 
   &__link {
     text-decoration: none;
   }
- }
+}
 
 .footer {
   height: 706px;
@@ -441,7 +440,7 @@ select {
 
   &__link_title {
     margin-bottom: 8px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -451,7 +450,7 @@ select {
   &__link {
     margin-bottom: 4px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -477,7 +476,7 @@ select {
   }
 
   &__text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 155%;
@@ -492,7 +491,7 @@ select {
   &__privacy {
     margin-left: 20px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -502,6 +501,4 @@ select {
   &__privacy:hover {
     text-decoration: underline;
   }
-
-
 }
