@@ -346,7 +346,7 @@ select {
   @media screen and (max-width: 1140px) {
     width: auto;
     height: auto;
-    padding: 20px 20px;
+    padding: 20px;
     transform: none;
 
     &__container {
@@ -480,7 +480,6 @@ select {
     &__wrapper {
       display: none;
     }
-
 
     &__quiz {
       margin-bottom: 0;
@@ -688,10 +687,9 @@ select {
     &__links_wrapper {
       margin: 0;
       display: grid;
-      grid-template-areas:
-      "courses services"
-      "packages about"
-      "contacts organizer";
+      grid-template-areas: "courses services"
+        "packages about"
+        "contacts organizer";
     }
 
     #about {
@@ -769,11 +767,11 @@ select {
       margin-top: 20px;
     }
 
-  .footer__organizer_text {
-    margin-left: 10px;
-    font-size: 10px;
-    line-height: 14px;
-  }
+    .footer__organizer_text {
+      margin-left: 10px;
+      font-size: 10px;
+      line-height: 14px;
+    }
 
     #trading_chat_room,
     #education,

@@ -1,7 +1,6 @@
 .header {
   position: relative;
   display: flex;
-  // padding: 129px 405px 111px 405px;
   padding-top: 129px;
   padding-bottom: 111px;
   padding-left: calc(50% - 555px);
@@ -80,7 +79,6 @@
     z-index: 1;
   }
 
-
   @media screen and (max-width: 1450px) {
     &__images {
       transform: translateX(-140px);
@@ -89,15 +87,14 @@
 
   @media screen and (max-width: 1140px) {
     flex-direction: column;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 60px;
     align-items: center;
     height: auto;
-    background-size: cover;;
+    background-size: cover;
 
     &__images {
       transform: none;
-      width: 281px;
       width: auto;
       height: auto;
       margin-bottom: 50px;
