@@ -1,15 +1,11 @@
 .info {
   position: relative;
-  // padding: 120px 405px;
   padding: 120px calc(50% - 555px);
-  // padding-left: calc(50% - 555px);
-  // padding-right: calc(50% - 555px);
   height: 600px;
 
   &__img {
     position: absolute;
     z-index: 1;
-
   }
 
   &__text {
@@ -48,5 +44,27 @@
     color: black;
     font-size: 16px;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 60px 0 0;
+    height: auto;
+
+    &__img {
+      position: relative;
+      width: 100vw;
+    }
+
+    &__text {
+      width: 90vw;
+      height: auto;
+      padding: 20px 14px 49px;
+      margin-left: auto;
+      margin-right: auto;
+
+      position: relative;
+      left: 0;
+      top: -125px;
+    }
   }
 }

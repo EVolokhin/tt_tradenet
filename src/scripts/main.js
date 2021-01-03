@@ -20,7 +20,7 @@ $.getJSON('http://ip-api.com/json', function(response) {
 // validating the form data
 $(function() {
   $('#userform').validate({
-    // rules: {
+    rules: {
     //   name: {
     //     required: true,
     //     minlength: 3,
@@ -45,7 +45,7 @@ $(function() {
     //     minlength: 'Phone must be at least 11 characters',
     //   },
     //   agree: 'Confirm your input',
-    // },
+    },
     submitHandler: function(form, event) {
     // do other things for a valid form
       event.isDefaultPrevented();

@@ -36,11 +36,7 @@ select {
 
 .text_about {
   display: block;
-  // padding: 40px 405px 60px 405px;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  padding-left: calc(50% - 555px);
-  padding-right: calc(50% - 555px);
+  padding: 40px 15px 60px;
   background-color: #fff0e5;
 }
 
@@ -48,6 +44,11 @@ select {
   position: relative;
   display: none;
   transform: matrix(1, 0, 0, -1, 0, 0);
+
+  @media screen and (max-width: 1140px) {
+    transform: none;
+  }
+
 }
 
 .data__page {
@@ -79,6 +80,10 @@ select {
     height: 85px;
     background-color: #ababab;
   }
+
+  @media screen and (max-width: 1140px) {
+    display: none;
+  }
 }
 
 .active {
@@ -90,9 +95,6 @@ select {
 .question {
   display: none;
   position: relative;
-
-  // margin-top: 80px;
-  // margin-bottom: 95px;
   width: 996px;
   height: 710px;
   padding: 40px 123px 110px;
@@ -101,7 +103,6 @@ select {
   border-radius: 10px;
 
   &__number {
-    margin-bottom: 120px;
     font-size: 24px;
     font-weight: 400;
     color: #ababab;
@@ -114,11 +115,9 @@ select {
     font-size: 32px;
   }
 
-  // &__img {
-  //   position: absolute;
-  //   left: 40px;
-  //   top: 186px;
-  // }
+  .question__icon-alternative {
+    display: none;
+  }
 
   &__container {
     display: flex;
@@ -153,24 +152,66 @@ select {
     stroke: #4c1ed3;
   }
 
-  // &__icon {
-  //   // align-self: center;
-  //   fill: red;
-  // }
-
   &__choise span {
-    // // display: block;
-    // // color: red;
-    // align-self: center;
     text-align: center;
   }
 
+  @media screen and (max-width: 1140px) {
+    width: auto;
+    height: auto;
+    padding: 20px 20px 40px;
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+
+    &__number {
+      font-size: 16px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 12px 0 20px;
+    }
+
+    &__icon {
+      display: block;
+      width: 42px;
+      height: 42px;
+    }
+
+    .question__icon-general {
+      display: none;
+    }
+
+    .question__icon-alternative {
+      display: block;
+    }
+
+    &__choise {
+      justify-content: flex-start;
+      padding: 12px 12px 12px 20px;
+      flex-direction: row;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 82px;
+    }
+
+    &__choise span {
+      text-align: start;
+      padding-left: 12px;
+      width: 163px;
+    }
+  }
 }
 
 .data {
   display: flex;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding: 80px 0;
   flex-direction: column-reverse;
   align-items: center;
   max-width: 1920px;
@@ -189,14 +230,29 @@ select {
     text-align: center;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 1140px) {
+    padding: 40px 15px 60px;
+    transform: none;
+    flex-direction: column;
+
+    &__title {
+      transform: none;
+      font-size: 20px;
+      margin: 0 0 26px;
+    }
+  }
 }
 
 .data-height {
   height: 885px;
+
+  @media screen and (max-width: 1140px) {
+    height: auto;
+  }
 }
 
 .form {
-  // display: none;
   display: flex;
   flex-direction: column;
   transform: matrix(1, 0, 0, -1, 0, 0);
@@ -248,6 +304,10 @@ select {
     letter-spacing: 0.05em;
   }
 
+  .form__agree-black {
+    color: black;
+  }
+
   &__check_container {
     display: flex;
     align-items: center;
@@ -281,6 +341,39 @@ select {
   &__button:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1140px) {
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    transform: none;
+
+    &__container {
+      padding: 26px 0 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &__agree {
+      width: 100%;
+    }
+
+    &__input {
+      width: 250px;
+      height: 32px;
+      margin-bottom: 12px;
+    }
+
+    .form__agree-black {
+      color: green;
+    }
   }
 }
 
@@ -380,6 +473,35 @@ select {
   &__quiz_button:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1140px) {
+    transform: none;
+
+    &__wrapper {
+      display: none;
+    }
+
+
+    &__quiz {
+      margin-bottom: 0;
+      align-items: center;
+      width: auto;
+      padding: 0;
+      border: none;
+    }
+
+    &__quiz_title {
+      text-align: center;
+    }
+
+    &__quiz_text {
+      text-align: center;
+    }
+
+    &__quiz_button {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .solutions {
@@ -409,8 +531,44 @@ select {
     justify-content: space-between;
   }
 
+  &__container_mobile {
+    display: none;
+  }
+
   &__link {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 1140px) {
+    padding: 40px 15px;
+    width: auto;
+    transform: none;
+
+    &__container {
+      display: none;
+    }
+
+    &__container_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      width: 250px;
+      text-align: start;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+
+    &__link {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -463,6 +621,7 @@ select {
 
   &__slink {
     margin-right: 15px;
+    text-decoration: none;
   }
 
   &__slink svg:hover {
@@ -470,9 +629,9 @@ select {
   }
 
   &__pay {
-    margin-bottom: 28px;
-    width: 359px;
     margin-left: auto;
+    margin-bottom: 28px;
+    width: 390px;
   }
 
   &__text {
@@ -500,5 +659,137 @@ select {
 
   &__privacy:hover {
     text-decoration: underline;
+  }
+
+  &__organizer {
+    display: none;
+  }
+
+  &__organizer_text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+  }
+
+  // blocks for mobile version
+  #courses,
+  #services,
+  #our_programs_title {
+    display: none;
+  }
+
+  @media screen and (max-width: 1140px) {
+    position: relative;
+    height: auto;
+    padding: 111px 15px 22px;
+
+    &__links_wrapper {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+      "courses services"
+      "packages about"
+      "contacts organizer";
+    }
+
+    #about {
+      grid-area: about;
+      margin-bottom: 20px;
+    }
+
+    #courses {
+      grid-area: courses;
+      margin-bottom: 20px;
+    }
+
+    #services {
+      grid-area: services;
+    }
+
+    #our_programs {
+      grid-area: packages;
+    }
+
+    #contacts {
+      grid-area: contacts;
+      margin-bottom: 20px;
+    }
+
+    #organizer {
+      grid-area: organizer;
+    }
+
+    &__block_2 {
+      padding: 20px 0;
+    }
+
+    &__links_block {
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    &__link_title {
+      font-size: 16px;
+    }
+
+    &__olink {
+      display: flex;
+      text-decoration: none;
+      margin-bottom: 6px;
+    }
+
+    &__media {
+      position: absolute;
+      left: calc(50% - 60px);
+      right: calc(50% - 90px);
+      bottom: 95px;
+    }
+
+    &__pay {
+      display: none;
+    }
+
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    &__logo {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__logo_image {
+      margin-top: 20px;
+    }
+
+  .footer__organizer_text {
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+    #trading_chat_room,
+    #education,
+    #our_programs_title {
+      display: none;
+    }
+
+    #courses,
+    #services,
+    #organizer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #our_programs_mobile_title {
+      display: inline-block;
+    }
   }
 }
