@@ -145,13 +145,15 @@
           applications
         </p>
         <div class="form__container">
-          <input
-            class="form__input"
-            type="text"
-            placeholder="Name"
-            id="name"
-            name="name"
-          >
+          <div class="form__error">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Name"
+              id="name"
+              name="name"
+            >
+          </div>
           <select
             class="form__input"
             name="country"
@@ -162,37 +164,46 @@
             <option value="china">China</option>
             <option value="usa">USA</option>
           </select>
-          <input
-            class="form__input"
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-          >
-          <input
-            class="form__input"
-            type="tel"
-            placeholder="phone"
-            id="phone"
-            name="phone"
-          >
+          <div class="form__error">
+            <input
+              class="form__input"
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+            >
+          </div>
+
+          <div class="form__error">
+            <input
+              class="form__input"
+              type="tel"
+              placeholder="phone"
+              id="phone"
+              name="phone"
+            >
+          </div>
+
         </div>
-        <label class="form__check_container" for="agree">
-          <input
-            class="form__check"
-            type="checkbox"
-            id="agree"
-            name="agree"
-          >
-          <p class="form__agree">
-            I consent to receive promotional materials from
-            time to time. I, hereby declare that I have read,
-            understood and accepted the
-            <span class="form__agree-black">
-              Company‘s Terms Conditions| Privacy policy and cookie policy
-            </span>
-          </p>
-        </label>
+        <div class="form__error">
+          <label class="form__check_container" for="agree">
+            <input
+              class="form__check"
+              type="checkbox"
+              id="agree"
+              name="agree"
+            >
+            <p class="form__agree">
+              I consent to receive promotional materials from
+              time to time. I, hereby declare that I have read,
+              understood and accepted the
+              <span class="form__agree-black">
+                Company‘s Terms Conditions| Privacy policy and cookie policy
+              </span>
+            </p>
+          </label>
+        </div>
+
         <button class="form__button" type="submit">
           GET NOW
         </button>

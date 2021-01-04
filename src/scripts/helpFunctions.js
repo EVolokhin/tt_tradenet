@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import $ from 'jquery';
 
-// user datat object made for gather the data from form and quiz
+// user data object made for gather the data from form and quiz
 export const userData = {
   name: '',
   mail: '',
@@ -24,11 +24,14 @@ export function slideHandler(page, choiseNum) {
     answers[`Question-${page}`] = $(`#choise${choiseNum}`).data();
     $('.data__questions').hide();
     $('#solutions').show();
+
+    // sending data after 4-th answer
     postData('http://ptsv2.com/t/piy3c-1609321473/post', userData);
   };
 
   answers[`Question-${page}`] = $(`#choise${choiseNum}`).data();
 
+  // sending data after 1-st answer
   if (page === 1) {
     postData('http://ptsv2.com/t/piy3c-1609321473/post', userData);
   };
@@ -40,9 +43,8 @@ export function slideHandler(page, choiseNum) {
   $(`#quiz_${page + 1}`).show();
 };
 
+// help function for hendeling the quiz answers
 export function switchHendl(id, quiz) {
-  console.log(`switch works`);
-
   const choisesNum = [];
   let count = 1 + (quiz * 4 - 4);
 
