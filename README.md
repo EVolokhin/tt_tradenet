@@ -5,6 +5,9 @@ WEB page with responsive design (Min-width 320px).
 It containes form for signup new user with data validation,
 questions blocks, and sending data (from form and questions) to remote server.
 
+(automaticly detects the visitors country and setting the phone country code,
+this feature does not work at demo link in the reason of using request to "http", you have to install and run this App to see how it works)
+
 (REST API)
 
 - [DEMO LINK](https://evolokhin.github.io/tt_tradenet/)
